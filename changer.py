@@ -89,11 +89,11 @@ def inspect_html():
 
 
 
-                #########################
-                #                       #
-                #  MODIFY CONTENT MENU  #
-                #                       #
-                #########################
+                ####################
+                #                  #
+                #  MODIFY CONTENT  #
+                #                  #
+                ####################
 
 
 def modify_content(soup, tag):
