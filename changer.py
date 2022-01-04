@@ -159,14 +159,6 @@ def change_template_menu(tag, modification):
 
 
 
-
-
-
-
-
-
-
-
                 #############
                 #           #
                 # MAIN CODE #
