@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 
 def inspect_html():
 
-    with open("talkschro.html") as fp:
+    with open("index.html") as fp:
         soup = BeautifulSoup(fp, 'html.parser')
 
     tag=""
