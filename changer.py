@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 
 def inspect_html():
 
-    with open("index.html") as fp:
+    with open("talkschro.html") as fp:
         soup = BeautifulSoup(fp, 'html.parser')
 
     tag=""
@@ -135,11 +135,13 @@ def change_template_menu(tag, modification):
 
         if choose_desire=="1":
             pages_to_change = pd.read_csv("webpages.csv", sep=";")
-            pages_to_change["webpage"]
+            print("Webpages loaded")
+            print()
 
 
         elif choose_desire=="2":
             for webpage in pages_to_change["webpage"]:
+                print("modifying:", webpage)
                 with open(webpage) as fp:
                     soup = BeautifulSoup(fp, 'html.parser')
                 exec(tag+"=modification")
@@ -189,6 +191,7 @@ while running_variable!=0:
 
     if choose_desire=="1":
         tag, modification=inspect_html()
+        print(tag)
 
 
     elif choose_desire=="2":
