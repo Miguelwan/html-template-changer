@@ -12,11 +12,11 @@ The file webpages.csv must contain the name of the html files that will be modif
 ### Running the scrip
 The script starts with a main menu with three options:
 
-*Inspect index.html*
+-*Inspect index.html*
 
-*Modify template*
+-*Modify template*
 
-*Exit.*
+-*Exit.*
 
 The option **Inspect index.html** is design to inspect the template and do the correct selction by tag, id, and/or attribute. Also it will allow to preview the changes on the file index.html. This menu is only for selection and preview only, no change is saved in this option.
 
@@ -25,27 +25,27 @@ The option **Modify template** is desing to applied the selected changes from * 
 ### Inspect index.html
 The option **Inspect index.html** contains the following options:
 
-*Print index.html*
+-*Print index.html*
 
-*Select id*
+-*Select id*
 
-*Select tag*
+-*Select tag*
 
-*Select attribute*
+-*Select attribute*
 
-*Show selection*
+-*Show selection*
 
-*Change content*
+-*Change content*
 
-*Reset selection*
+-*Reset selection*
 
-*Return to main menu.*
+-*Return to main menu.*
 
 ### Modify template
 The option **Modify template** contains the following options:
 
-*Load webpages list*
+-*Load webpages list*
 
-*Modify webpages*
+-*Modify webpages*
 
-*Return to main menu.*
+-*Return to main menu.*
