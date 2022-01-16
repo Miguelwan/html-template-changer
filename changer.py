@@ -64,6 +64,8 @@ def inspect_html(file_to_inspect):
 
         elif choose_desire=="5":
             print()
+            print("Your selection is "+order+".")
+            print()
             print_order="print(soup"+order+")"
             exec(print_order)
 
