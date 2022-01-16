@@ -249,7 +249,7 @@ while running_variable!=0:
         print("This is a simple script to make a small modification on many html files of a proyect at the same time (update a picture in all the html files, modify a text in all the html files).")
         print("The script was made under the assumption that all the html files to modify have the same structure (same id markers, tag paths, etc).")
         print("For information about the script see the readme.md file in 'https://github.com/Miguelwan/html-template-changer'.")
-        print("For a tutorial of the script read index.html in 'https://github.com/Miguelwan/html-template-changer/blob/master/tutorial'")
+        print("For a tutorial of the script read index.html in 'https://github.com/Miguelwan/html-template-changer/tree/master/tutorial'")
 
 
     elif choose_desire=="0":
