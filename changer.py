@@ -213,17 +213,21 @@ running_variable=1
 
 while running_variable!=0:
     print()
+    print("Script by miguelmath")
+    print()
     print("         #################")
     print("         ##             ##")
     print("         ##  MAIN MENU  ##")
     print("         ##             ##")
     print("         #################")
 
+
     print()
     print("What would you like to do :")
     print()
     print("1) Inspect html file")
     print("2) Modify template")
+    print("9) Help/About")
     print("0) Exit.")
     print()
     choose_desire=input("Enter your choice: ")
@@ -239,6 +243,13 @@ while running_variable!=0:
             print("No change or selection has been made, please go to 'Inspect html file'.")
         else:
             change_template_menu(tag, modification)
+
+    elif choose_desire=="9":
+        print("This script was made by miguelmath.com ")
+        print("This is a simple script to make a small modification on many html files of a proyect at the same time (update a picture in all the html files, modify a text in all the html files).")
+        print("The script was made under the assumption that all the html files to modify have the same structure (same id markers, tag paths, etc).")
+        print("For information about the script see the readme.md file in 'https://github.com/Miguelwan/html-template-changer'.")
+        print("For a tutorial of the script read index.html in 'https://github.com/Miguelwan/html-template-changer/blob/master/tutorial'")
 
 
     elif choose_desire=="0":
