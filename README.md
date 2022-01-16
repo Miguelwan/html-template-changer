@@ -37,7 +37,9 @@ The option **Inspect html file** contains the following options:
 
 -*Select attribute*
 
--*Show selection*
+-*Show selector*
+
+-*Show selected content*
 
 -*Change content*
 
@@ -55,7 +57,9 @@ The option **Inspect html file** contains the following options:
 
 **Select attribute:** This options allows you to select attributes such as *src*, *alt*, *string*, etc.
 
-**Show selection:** This option allows you to see the path for your selection and the selected object at any moment.
+**Show selection:** This option allows you to see the path for your selection.
+
+**Show selected content:** This option allows you to see the content of your selection.
 
 **Change content:** In this options you can enter the new information in the html file. Be sure to have the right selection, the selection must have an attribute. No tags can be added, modifications can be only made on the content of strings or attributs. To make more than one change, you will need to make the changes one by one first selecting them in *Inspect html file* and applying them in  *Modify template*.
 

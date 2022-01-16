@@ -29,12 +29,13 @@ def inspect_html(file_to_inspect):
 
         print("What would you like to do :")
         print()
-        print("1) Print", file_to_inspcet)
+        print("1) Print", file_to_inspect)
         print("2) Select id")
         print("3) Select tag")
         print("4) Select attribute")
-        print("5) Show selection")
-        print("6) Change content")
+        print("5) Show selector")
+        print("6) Show selected content")
+        print("7) Change content")
         print("8) Reset changes")
         print("9) Reset selection")
         print("0) Return to main menu.")
@@ -65,21 +66,23 @@ def inspect_html(file_to_inspect):
         elif choose_desire=="5":
             print()
             print("Your selection is "+order+".")
+
+        elif choose_desire=="6":
             print()
             print_order="print(soup"+order+")"
             exec(print_order)
 
-        elif choose_desire=="6":
+        elif choose_desire=="7":
             if change_made==1:
                 was_saved=input("Warning: The changes made in 'Inspect html file' are only a preview. Making a new preview will erase the previous one. Would you like to proceed (y/n)?")
                 if was_saved=="y":
-                    with open(file_to_inspcet) as fp:
+                    with open(file_to_inspect) as fp:
                         soup = BeautifulSoup(fp, 'html.parser')
                     tag="soup"+order
                     soup, modification=modify_content(soup, tag)
 
                 elif was_saved=="n":
-                    print("check the selection you have made, with option 5. You can reset a mistaken selection with option 9.")
+                    print("Check that the selection and preview you have made fits the changes you want to apply, with options 1, 5 and 6. You can reset a mistaken selection with option 9.")
 
             elif change_made==0:
                 change_made=1
@@ -88,11 +91,12 @@ def inspect_html(file_to_inspect):
         
         elif choose_desire=="8":
             reset_changes=input("Would you like to reset the changes made so far (y/n)? ")
-            if reset_selection=="y":
-                with open(file_to_inspcet) as fp:
+            if reset_changes=="y":
+                with open(file_to_inspect) as fp:
                     soup = BeautifulSoup(fp, 'html.parser')
                 modification=""
                 tag=""
+                order=""
 
         elif choose_desire=="9":
             reset_selection=input("Your selection is "+order+" would you like to reset this selection (y/n)? ")
@@ -225,13 +229,13 @@ while running_variable!=0:
     choose_desire=input("Enter your choice: ")
 
     if choose_desire=="1":
-        file_to_inspect=input("What is the name of the file that you want to change (include the extension .html)?")
+        file_to_inspect=input("What is the name of the file that you want to change (include the extension .html)? ")
         tag, modification=inspect_html(file_to_inspect)
         print(tag)
 
 
     elif choose_desire=="2":
-        if tag="" or modification="":
+        if tag=="" or modification=="":
             print("No change or selection has been made, please go to 'Inspect html file'.")
         else:
             change_template_menu(tag, modification)
