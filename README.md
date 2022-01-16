@@ -81,3 +81,4 @@ The option **Modify template** contains the following options:
 
 
 ## Example
+For an example on how to use the script, make a copy of the script in the folder **tutorial**, open index.html in your browser, and follow the tutorial.
