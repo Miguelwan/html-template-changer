@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+ <body>
+  <main class="container">
+   <h1>
+    Tutorial
+   </h1>
+   <p>
+    This is a tutorial to understand how to use the html-template changer. In the read me file you ac find more information. The tutorial consist of two html files
+    <em>
+     index.html
+    </em>
+    and
+    <em>
+     contact.html
+    </em>
+    ,
+   </p>
+   <h2>
+    Modifying the footer.
+   </h2>
+   Let us start with a simple change, the footer.
+   <ol>
+    <li>
+     Select
+     <em>
+      Inspect html file
+     </em>
+     .
+    </li>
+    <li>
+     Enter index.mthl as the file to inspect it.
+    </li>
+    <li>
+     Select
+     <em>
+      Print index.html
+     </em>
+     , to get an overview of the file, also to be sure that the right file was selected. As you can see the year in the footer is wrong. You can open both html file and you will see that the year is wrong in both files.
+    </li>
+    <li>
+     Select
+     <em>
+      Select tag
+     </em>
+     and enter
+     <em>
+      footer
+     </em>
+     as the tag to change.
+    </li>
+    <li>
+     Select
+     <em>
+      Show selector
+     </em>
+     to display the selctor. The script should display
+     <em>
+      Your selection is .footer.
+     </em>
+     if the script displays something different, select
+     <em>
+      Reset selection
+     </em>
+     and follow the previous step.
+    </li>
+    <li>
+     Select
+     <em>
+      Show selected content
+     </em>
+     to display the the the content of the footer. The script should display
+     <em>
+      &lt;footer&gt;
+   2009
+  &lt;/footer&gt;
+     </em>
+    </li>
+    <li>
+     Since the only content of the footer is a string, select
+     <em>
+      Select attribute
+     </em>
+     and enter
+     <em>
+      string
+     </em>
+     .
+    </li>
+    <li>
+     Select
+     <em>
+      Show selected content
+     </em>
+     to display the the the content that was selected. The script should display
+     <em>
+      2009
+     </em>
+     if the script displays something different, select
+     <em>
+      Reset selection
+     </em>
+     and follow the previous steps.
+    </li>
+    <li>
+     Select
+     <em>
+      Change content
+     </em>
+     our selection should be
+     <em>
+      soup.footer.string
+     </em>
+     if that is correct, then proceed.
+    </li>
+    <li>
+     Now, enter the year 2022
+    </li>
+    <li>
+     Select
+     <em>
+      Print index.html
+     </em>
+     to check that the footer now says 2022.
+    </li>
+    <li>
+     This is just a preview of the changes, to make these changes in the html files, return to main menu
+    </li>
+    <li>
+     In the main menu, select
+     <em>
+      Modify template
+     </em>
+    </li>
+    <li>
+     Load the webpages, the webpages must be listed in advance in the file webpages.csv
+    </li>
+    <li>
+     Select
+     <em>
+      Modify webpages
+     </em>
+     , the script should display
+     <br/>
+     <em>
+      modifying: index.html
+     </em>
+     <br/>
+     <em>
+      modifying: contact.html
+     </em>
+     .
+    </li>
+    <li>
+     Now you can exit and check that the footer has  been changed in both files.
+    </li>
+   </ol>
+   <h2>
+    Modifying the News text.
+   </h2>
+   Let us continue with the text in the news section. The news talks about a dog found in the Moon, but you know dogs cannot live in the moon but cats can. Let us change dog to cat.
+   <ol>
+    <li>
+     Select
+     <em>
+      Inspect html file
+     </em>
+     .
+    </li>
+    <li>
+     Enter index.mthl as the file to inspect it.
+    </li>
+    <li>
+     Select
+     <em>
+      Print index.html
+     </em>
+     , to get an overview of the file, also to be sure that the right file was selected. As you can see the news are nested in a div with id "News_text".
+    </li>
+    <li>
+     Select
+     <em>
+      Select id
+     </em>
+     and enter
+     <em>
+      News_text
+     </em>
+     as the id to change.
+    </li>
+    <li>
+     Select
+     <em>
+      Select tag
+     </em>
+     and enter
+     <em>
+      p
+     </em>
+     as the tag to change.
+    </li>
+    <li>
+     Select
+     <em>
+      Show selector
+     </em>
+     to display the selctor. The script should display
+     <em>
+      Your selection is .find(id='News_text').p.
+     </em>
+     if the script displays something different, select
+     <em>
+      Reset selection
+     </em>
+     and follow the previous steps.
+    </li>
+    <li>
+     Select
+     <em>
+      Show selected content
+     </em>
+     to display the the the content of our selectionr. The script should display
+     <em>
+      &lt;p&gt;
+     A dog was found a live in the Moon
+    &lt;/p&gt;
+     </em>
+    </li>
+    <li>
+     Since the only content of our is a string, select
+     <em>
+      Select attribute
+     </em>
+     and enter
+     <em>
+      string
+     </em>
+     .
+    </li>
+    <li>
+     Select
+     <em>
+      Show selected content
+     </em>
+     to display the the the content that was selected. The script should display
+     <em>
+      A dog was found a live in the Moon
+     </em>
+     if the script displays something different, select
+     <em>
+      Reset selection
+     </em>
+     and follow the previous steps.
+    </li>
+    <li>
+     Select
+     <em>
+      Change content
+     </em>
+     our selection should be
+     <em>
+      soup.find(id='News_text').p.string
+     </em>
+     if that is correct, then proceed.
+    </li>
+    <li>
+     Now, enter
+     <em>
+      A cat was found living in the Moon
+     </em>
+    </li>
+    <li>
+     Select
+     <em>
+      Print index.html
+     </em>
+     to check that the news are now about a cat.
+    </li>
+    <li>
+     This is just a preview of the changes, to make these changes in the html files, return to main menu
+    </li>
+    <li>
+     In the main menu, select
+     <em>
+      Modify template
+     </em>
+    </li>
+    <li>
+     Load the webpages, the webpages must be listed in advance in the file webpages.csv
+    </li>
+    <li>
+     Select
+     <em>
+      Modify webpages
+     </em>
+     , the script should display
+     <br/>
+     <em>
+      modifying: index.html
+     </em>
+     <br/>
+     <em>
+      modifying: contact.html
+     </em>
+     .
+    </li>
+    <li>
+     Now you can exit and check that the news has  been changed in both files.
+    </li>
+   </ol>
+
+      <h2>
+    Modifying the picture.
+   </h2>
+   Let us continue with the picture of the webpage. Now the news talks about a cat found in the Moon, but the picture is about a dog and it doesn't load. Let us change it to cat one.
+   <ol>
+    <li>
+     Select
+     <em>
+      Inspect html file
+     </em>
+     .
+    </li>
+    <li>
+     Enter index.mthl as the file to inspect it.
+    </li>
+    <li>
+     Select
+     <em>
+      Print index.html
+     </em>
+     , to get an overview of the file, also to be sure that the right file was selected. As you can see the picture is nested in a div with id "main_div".
+    </li>
+    <li>
+     Select
+     <em>
+      Select id
+     </em>
+     and enter
+     <em>
+      main_div
+     </em>
+     as the id to change.
+    </li>
+    <li>
+     Select
+     <em>
+      Select tag
+     </em>
+     and enter
+     <em>
+      figure
+     </em>
+     as the tag to change.
+    </li>
+    <li>
+    Since the picture is an img tag nested in the figure tag, select
+     <em>
+      Select tag
+     </em>
+     and enter
+     <em>
+      img
+     </em>
+     as the tag to change.
+    </li>
+    <li>
+     Select
+     <em>
+      Show selector
+     </em>
+     to display the selctor. The script should display
+     <em>
+      Your selection is .find(id='main_div').figure.img
+     </em>
+     if the script displays something different, select
+     <em>
+      Reset selection
+     </em>
+     and follow the previous steps.
+    </li>
+    <li>
+     Select
+     <em>
+      Show selected content
+     </em>
+     to display the the the content of our selectionr. The script should display
+     <em>
+      &lt;img alt="A dog picture" src=".dog.jpg"/&gt;
+     </em>
+    </li>
+    <li>
+     Since we want to change the picture, select
+     <em>
+      Select attribute
+     </em>
+     and enter
+     <em>
+      src
+     </em>
+     .
+    </li>
+    <li>
+     Select
+     <em>
+      Show selected content
+     </em>
+     to display the the the content that was selected. The script should display
+     <em>
+      .dog.jpg
+     </em>
+     if the script displays something different, select
+     <em>
+      Reset selection
+     </em>
+     and follow the previous steps.
+    </li>
+    <li>
+     Select
+     <em>
+      Change content
+     </em>
+     our selection should be
+     <em>
+      soup.find(id='main_div').figure.img['src']
+     </em>
+     if that is correct, then proceed.
+    </li>
+    <li>
+     Now, enter
+     <em>
+      cat.jpg
+     </em>
+    </li>
+    <li>
+     Select
+     <em>
+      Print index.html
+     </em>
+     to check that the picture is cat.jpg.
+    </li>
+    <li>
+     This is just a preview of the changes, to make these changes in the html files, return to main menu
+    </li>
+    <li>
+     In the main menu, select
+     <em>
+      Modify template
+     </em>
+    </li>
+    <li>
+     Load the webpages, the webpages must be listed in advance in the file webpages.csv
+    </li>
+    <li>
+     Select
+     <em>
+      Modify webpages
+     </em>
+     , the script should display
+     <br/>
+     <em>
+      modifying: index.html
+     </em>
+     <br/>
+     <em>
+      modifying: contact.html
+     </em>
+     .
+    </li>
+    <h3>Now we have to modify the description of the picture.</h3>
+
+    <li>
+     Select
+     <em>
+      Inspect html file
+     </em>
+     .
+    </li>
+    <li>
+     Enter index.mthl as the file to inspect it.
+    </li>
+    <li>
+     Select
+     <em>
+      Print index.html
+     </em>
+     , to get an overview of the file, also to be sure that the right file was selected.
+    </li>
+    <li>
+     Select
+     <em>
+      Select id
+     </em>
+     and enter
+     <em>
+      main_div
+     </em>
+     as the id to change.
+    </li>
+    <li>
+     Select
+     <em>
+      Select tag
+     </em>
+     and enter
+     <em>
+      figure
+     </em>
+     as the tag to change.
+    </li>
+    <li>
+    Since the picture is an img tag nested in the figure tag, select
+     <em>
+      Select tag
+     </em>
+     and enter
+     <em>
+      img
+     </em>
+     as the tag to change.
+    </li>
+    <li>
+     Select
+     <em>
+      Show selector
+     </em>
+     to display the selctor. The script should display
+     <em>
+      Your selection is .find(id='main_div').figure.img
+     </em>
+     if the script displays something different, select
+     <em>
+      Reset selection
+     </em>
+     and follow the previous steps.
+    </li>
+    <li>
+     Select
+     <em>
+      Show selected content
+     </em>
+     to display the the the content of our selectionr. The script should display
+     <em>
+      &lt;img alt="A dog picture" src=".dog.jpg"/&gt;
+     </em>
+    </li>
+    <li>
+     Since we want to change the picture, select
+     <em>
+      Select attribute
+     </em>
+     and enter
+     <em>
+      alt
+     </em>
+     .
+    </li>
+    <li>
+     Select
+     <em>
+      Show selected content
+     </em>
+     to display the the the content that was selected. The script should display
+     <em>
+      A dog picture
+     </em>
+     if the script displays something different, select
+     <em>
+      Reset selection
+     </em>
+     and follow the previous steps.
+    </li>
+    <li>
+     Select
+     <em>
+      Change content
+     </em>
+     our selection should be
+     <em>
+      soup.find(id='main_div').figure.img['alt']
+     </em>
+     if that is correct, then proceed.
+    </li>
+    <li>
+     Now, enter
+     <em>
+      A picture of a cat
+     </em>
+    </li>
+    <li>
+     Select
+     <em>
+      Print index.html
+     </em>
+     to check that the picture descrption is 'A picture of a cat'.
+    </li>
+    <li>
+     This is just a preview of the changes, to make these changes in the html files, return to main menu
+    </li>
+    <li>
+     In the main menu, select
+     <em>
+      Modify template
+     </em>
+    </li>
+    <li>
+     Load the webpages, the webpages must be listed in advance in the file webpages.csv
+    </li>
+    <li>
+     Select
+     <em>
+      Modify webpages
+     </em>
+     , the script should display
+     <br/>
+     <em>
+      modifying: index.html
+     </em>
+     <br/>
+     <em>
+      modifying: contact.html
+     </em>
+     .
+    </li>
+    <li>
+     Now you can exit and check that the picture has  been changed in both files.
+    </li>
+
+   </ol>
+
+
+   <h2>The code for the tutorial</h2>
+
+   <div id="main_div">
+    <figure>
+     <img alt="A dog picture" src=".dog.jpg"/>
+    </figure>
+   </div>
+   <div id="News_text">
+    <h3>
+     News
+    </h3>
+    <p>
+     A dog was found a live in the Moon
+    </p>
+   </div>
+  </main>
+  <footer>
+   2009
+  </footer>
+ </body>
+</html>
